@@ -1,3 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML/CSS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+		<div id="mb">
+			<div id="b1" class="c">
+				<h1>Лабораторные работы</h1>
+				<h3>студентки 1 курса группы 1М <br> Неберовой Дарьи</h3>
+			</div>
+			<div id="b2" class="a1">
+				<ul>
+					<li><a href="Сайт.html">Главная страница</a></li>
+					<li><a href="ЛР1.html">Лабораторная работа 1</a></li>
+					<li><a href="ЛР2.html">Лабораторная работа 2</a></li>
+					<li><a href="ЛР3.html">Лабораторная работа 3</a></li>
+					<li><a href="ЛР4.html">Лабораторная работа 4</a></li>
+					<li><a href="КР.html">Контрольная работа</a></li>
+					<li><a href="2.html">Лабораторна робота3.1</a></li>
+				</ul>
+			</div>
+			  
+			<div id="b3" class="a1">
+<h3>На даном сайте Вы можете увидеть лабораторные работы, выполненые мною!</h3>
+<img src="2.jpeg" alt="учеба">
+				
+			</div>
+			<div id="b4" class="c">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy; Неберова Дарья, 2018</p>
+			</div>
+				
+		</div>
+</body>
 <!doctype html>
 <html lang="en">
 <head>
@@ -59,41 +96,35 @@
     </style>
 </head>
 <body>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>HTML/CSS</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-		<div id="mb">
-			<div id="b1" class="c">
-				<h1>Лабораторные работы</h1>
-				<h3>студентки 1 курса группы 1М <br> Неберовой Дарьи</h3>
-			</div>
-			<div id="b2" class="a1">
-				<ul>
-					<li><a href="Сайт.html">Главная страница</a></li>
-					<li><a href="ЛР1.html">Лабораторная работа 1</a></li>
-					<li><a href="ЛР2.html">Лабораторная работа 2</a></li>
-					<li><a href="ЛР3.html">Лабораторная работа 3</a></li>
-					<li><a href="ЛР4.html">Лабораторная работа 4</a></li>
-					<li><a href="КР.html">Контрольная работа</a></li>
-					<li><a href="2.html">Лабораторна робота3.1</a></li>
-				</ul>
-			</div>
-			  
-			<div id="b3" class="a1">
-<h3>На даном сайте Вы можете увидеть лабораторные работы, выполненые мною!</h3>
-<img src="2.jpeg" alt="учеба">
-				
-			</div>
-			<div id="b4" class="c">
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;
-				&copy; Неберова Дарья, 2018</p>
-			</div>
-				
-		</div>
+<div class="content">
+    <nav class="menu">
+        <ul>
+            <li>
+                <a class="link-menu" href="#" id="text">Выберите масть...</a>
+                <ul class="submenu">
+                    <li id="trefi">
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqjmjoRd6DVWfaNxdGXoFngfrFL2QIpR1ip5IsSTzePSwH-74B" alt="трефы"> </a>
+                    </li>
+                    <li id="piki">
+                        <a href="#"><img src="https://avatanplus.com/files/resources/mid/588d9448d2cbe159e90b3c9f.png" alt="пики"> </a>
+                    </li>
+                    <li id="chirvi">
+                        <a href="#"><img src="http://ladyvenus.ru/uploads/uploaded_images/users/user9195/nrjake92yi.png" alt="червы"> </a>
+                    </li>
+                    <li id="bubni">
+                        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/SuitDiamonds.svg/240px-SuitDiamonds.svg.png" alt="бубны"> </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="image" id="image" onmouseover="document.getElementById('field').value = 'Привет, Мир!'" onmouseout="document.getElementById('field').value = ''">
+        <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Smiling_Emoji_with_Smiling_Eyes_large.png?v=1480481060" alt="Изображение">
+    </div>
+    <form onsubmit="return false">
+        <input type="text" id="field" value="">
+    </form>
+</div>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
