@@ -10,7 +10,7 @@ elements.push(element);
 } 
 return elements; }
 
-function f2()
+function f1()
 {
         a=parseFloat($('tx1').value);
 	b=parseFloat($('tx2').value);
