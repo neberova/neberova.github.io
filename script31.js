@@ -12,14 +12,14 @@ return elements; }
 
 function f2()
 {
-        a=parseFloat($('tx1').value);
-	b=parseFloat($('tx2').value);
+        a=parseFloat($('tx11').value);
+	b=parseFloat($('tx12').value);
         x1=a;
         x2=b;
 	if(a>b)
-{$('tx3').value=''+a;
+{$('tx9').value=''+a;
 }
 else
-{$('tx3').value=''+b;
+{$('tx9').value=''+b;
 }
 }
