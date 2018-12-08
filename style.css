@@ -24,9 +24,9 @@ div
 	{	background-color:gainsboro;
 		text-align: center;
 		text-transform: uppercase;
+		border-radius: 25px;
 		font-size: 150% 
-background-image: url(actsii.png)
-	 border-radius: 25px;		
+		
 }
 #b2 
 	{ 	background-color: wheat;
@@ -39,8 +39,9 @@ float: right; }
 #b3 
 	{ 	background-color: salmon;
 		width: 75%;
+		border-radius: 25px;
 		float: left
- border-radius: 25px;}
+ }
 #b4
    	{  	background-color:coral;
 		 border-radius: 25px;
