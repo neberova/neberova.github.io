@@ -26,18 +26,22 @@ div
 		text-transform: uppercase;
 		font-size: 150% 
 background-image: url(actsii.png)
+	 border-radius: 25px;		
 }
 #b2 
 	{ 	background-color: wheat;
 		color: white;
 		width: 20%;
+		 border-radius: 25px;
 	 
 float: right; }
 
 #b3 
 	{ 	background-color: salmon;
 		width: 75%;
-		float: left }
+		float: left
+ border-radius: 25px;}
 #b4
    	{  	background-color:coral;
+		 border-radius: 25px;
    		clear: both }
