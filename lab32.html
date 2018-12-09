@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 17</title>
+    <script type="text/javascript">
+        var a = prompt('Укажите вещественное число А.');
+        var n = prompt('Укажите целое число N.');
+        a = parseFloat(a.replace(/,/, '.'));
+        n = parseInt(n);
+        var summ = 0;
+
+        if(isNaN(n) == true) {
+            alert('N должно быть целым числом!');
+            location.reload();
+        } else {
+            if(isNaN(a) == true) {
+                alert('A должно быть вещественным числом!');
+                location.reload();
+            } else {
+                for (var i =0; i <= n; i++){
+                    summ = summ + Math.pow(a, n);
+                }
+                alert(summ);
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
