@@ -1,5 +1,4 @@
 function middle() {
-var a = parseInt(document.getElementById('a').value);
 var price = prompt('Укажите цену за 1 кг.');
         var res;
         var weight;
