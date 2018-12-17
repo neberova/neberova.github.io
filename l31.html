@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML/CSS</title>
+	    <script type="text/javascript">
+        var price = prompt('Укажите цену за 1 кг.');
+        var res;
+        var weight;
+        price = parseFloat(price.replace(/,/, '.'));
+
+        if(isNaN(price) == true) {
+            alert('Цена должна быть вещественным числом!');
+            location.reload();
+        } else {
+            if ((typeof price == 'number')) {
+                for (var i = 1; i <= 10; i++){
+                    weight = i/10;
+                    res = weight * price;
+                    alert('Цена за ' + weight + ' кг равна ' + res + ' грн.');
+                }
+            } else {
+                alert('Цена должна быть вещественным числом!');
+                location.reload();
+            }
+        }
+    </script>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="31.js">
 </head>
 <body>
 		<div id="mb">
@@ -29,11 +50,7 @@
 			</div>
 			  
 			<div id="b3" class="a1">
-				<p> Дано вещественное число - цена за 1 кг конфет. Вывести стоимость 0.1, 0.2,...,1 кг конфет </p>
-					<input type="button" name="btn1" value="OK" onclick="middle()"><br>
-
-	Ваш Результат:<div id="result" style="border:"></div>
-			</div>
+				</div>
 			<div id="b4" class="c">
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;
 				&copy; Неберова Дарья, 2018</p>
