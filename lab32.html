@@ -4,25 +4,7 @@
 	<title>HTML/CSS</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript">
-        var a = prompt('Укажите вещественное число А.');
-        var n = prompt('Укажите целое число N.');
-        a = parseFloat(a.replace(/,/, '.'));
-        n = parseInt(n);
-        var summ = 0;
-
-        if(isNaN(n) == true) {
-            location.reload();
-        } else {
-            if(isNaN(a) == true) {
-                location.reload();
-            } else {
-                for (var i =0; i <= n; i++){
-                    summ = summ + Math.pow(a, n);
-                
-        }
-
-    </script>
+	<script src="script3.js">
 </head>
 <body>
 		<div id="mb">
@@ -49,6 +31,12 @@
 			  
 			<div id="b3" class="a1">
 <h3>Цикл с параметром FOR / 17 </h3>
+<form action="" method="post" name="lab1"  >
+	<input  type="text"  id="N">Введи число  N<br>
+	<p>Выведем ряд Фибаначи для числа N</p>
+
+	
+	<input type="button" name="btn1" value="OK!!" onclick="middle()"><br>
 
 				
 			</div>
