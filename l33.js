@@ -31,6 +31,6 @@ function f1()
 	}
 	else
 	{
-		$('tx3').value='A should be LESS than B!';
+		$('tx3').value='A должно быть меньше B!';
 	}
 }
