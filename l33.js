@@ -33,3 +33,4 @@ function f1()
 	{
 		$('tx3').value='A should be LESS than B!';
 	}
+}
