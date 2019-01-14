@@ -3,7 +3,7 @@
 <head>
 	<title>HTML/CSS</title>
 	<meta charset="utf-8">
-   <script src="https://js.cx/libs/animate.js"></script>
+   <script src="l6.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 </head>
@@ -39,36 +39,7 @@
  <div id="field">
     <img src="https://js.cx/clipart/ball.svg" width="40" height="40" id="ball">
   </div>
-	<script>
-    function makeEaseOut(timing) {
-      return function(timeFraction) {
-        return 1 - timing(1 - timeFraction);
-      }
-    }
-
-    function bounce(timeFraction) {
-      for (var a = 0, b = 1, result; 1; a += b, b /= 2) {
-        if (timeFraction >= (7 - 4 * a) / 11) {
-          return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
-        }
-      }
-    }
-
-    ball.onclick = function() {
-
-      var to = field.clientHeight - ball.clientHeight;
-
-      animate({
-        duration: 2000,
-        timing: makeEaseOut(bounce),
-        draw: function(progress) {
-          ball.style.top = to * progress + 'px'
-        }
-      });
-
-
-    };
-  </script>			
+				
 			</div>
 			<div id="b4" class="c">
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;
