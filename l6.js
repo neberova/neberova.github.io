@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML/CSS</title>
+	<meta charset="utf-8">
+   <script src="https://js.cx/libs/animate.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+		<div id="mb">
+			<div id="b1" class="c">
+				<h1>Лабораторные работы</h1>
+				<h3>студентки 2 курса группы 2МИ <br> Неберовой Дарьи</h3>
+			</div>
+			<div id="b2" class="a1">
+				<ul>
+					<li><a href="Сайт.html">Главная страница</a></li>
+					<li><a href="ЛР1.html">Лабораторная работа 1</a></li>
+					<li><a href="ЛР2.html">Лабораторная работа 2</a></li>
+					<li><a href="ЛР3.html">Лабораторная работа 3</a></li>
+					<li><a href="ЛР4.html">Лабораторная работа 4</a></li>
+					<li><a href="КР.html">Контрольная работа</a></li>
+					<li><a href="lab8.html">Java Script</a></li>
+					<li><a href="2.html">Лабораторная работа 2</a></li>
+					<li><a href="3.html">Лабораторная работа 3(Js)</a></li>
+					<li><a href="l31.html">Лабораторная работа 3.1 (Js)</a></li>
+					<li><a href="lab32.html">Лабораторная работа 3.2 (Js)</a></li>
+					<li><a href="l33.html">Лабораторная работа 3.3 (Js)</a></li>
+					<li><a href="l34.html">Лабораторная работа 3.4 (Js)</a></li>
+					<li><a href="l3.html">Калькулятор</a></li>
+					<li><a href="l35.html">Лабораторная работа 3.5 (Js)</a></li>
+					<li><a href="l35(2).html">Лабораторная работа 3.5(2) (Js)</a></li>
+					<li><a href="l4.html">JavaScript(Array(),String())</a></li>
+				</ul>
+			</div>
+			  
+			<div id="b3" class="a1">
+ <div id="field">
+    <img src="https://js.cx/clipart/ball.svg" width="40" height="40" id="ball">
+  </div>
+	<script>
+    function makeEaseOut(timing) {
+      return function(timeFraction) {
+        return 1 - timing(1 - timeFraction);
+      }
+    }
+
+    function bounce(timeFraction) {
+      for (var a = 0, b = 1, result; 1; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+          return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+        }
+      }
+    }
+
+    ball.onclick = function() {
+
+      var to = field.clientHeight - ball.clientHeight;
+
+      animate({
+        duration: 2000,
+        timing: makeEaseOut(bounce),
+        draw: function(progress) {
+          ball.style.top = to * progress + 'px'
+        }
+      });
+
+
+    };
+  </script>			
+			</div>
+			<div id="b4" class="c">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;
+				&copy; Неберова Дарья, 2018</p>
+			</div>
+				
+		</div>
+</body>
+</html>
