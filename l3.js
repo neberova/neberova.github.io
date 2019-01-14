@@ -1,113 +1,109 @@
-​function $() 
-{
-var elements = new Array();
-for (var i = 0; i < arguments.length; i++)
-{var element = arguments[i];
-if (typeof element == 'string')
-element = document.getElementById(element);
-if (arguments.length == 1)
-return element;
-elements.push(element);
-}
-return elements;}
+function $() 
+{ var elements = new Array(); 
+for (var i = 0; i < arguments.length; i++) 
+{ var element = arguments[i]; 
+if (typeof element == 'string') 
+element = document.getElementById(element); 
+if (arguments.length == 1) 
+return element; 
+elements.push(element); 
+} 
+return elements; }
 
-var t = new Date();//Сегодняшняя дата
-var d = t.getDate();
-var m = t.getMonth();
-var y = t.getFullYear();
-
-var t1 = new Date();
-
-function d1()//Сделать проверку дня, месяца, года?
-{
-	t1.setDate(parseInt($('tx1').value));
-	var d1 = t1.getDate();
-	$('tx1').value='';
-}
-
-function m1()
-{
-	t1.setMonth(parseInt($('tx1').value)-1);
-	var m1 = t1.getMonth();
-	$('tx1').value='';
-}
-
-function y1()
-{
-	t1.setYear(parseInt($('tx1').value));
-	var y1 = t1.getFullYear();
-	$('tx1').value='';
-}
-
-//Дата из текстового поля получена
-
-//Главные функции 
-function n1()
-{
-	var s = new Date(100, 1, 29);
-	var s1 = Math.round((t1-s)/1000/60/60/24);
-	var s2 = Math.round((t-s)/1000/60/60/24);
-	var r1 = 1;
-	var r2 = 1;
-	
-	for (var i = 0; i <= s1; i=i+1461);
-	{
-		r1=r1+(i/1461);
-	}
-	for (var j = 0; j <= s2; j=j+1461);
-	{
-		r2=r2+(j/1461);
-	}
-	
-	if (r1<r2)
-	{
-		$('tx1').value=r2-r1;
-	}
-	else 
-	{
-		$('tx1').value=r1-r2;
-	}
-	if (s1==s2 && d==29 && m==1) 
-	{
-		$('tx1').value='1';
-	}
-}
-
-function w1()
-{
-	var w1 = t1.getDay();
-	switch (w1) {
-		case 0:
-		$('tx1').value="Sunday";
-		break;
-		case 1:
-		$('tx1').value="Monday";
-		break;
-		case 2:
-		$('tx1').value="Tuesday";
-		break;
-		case 3:
-		$('tx1').value="Wednesday";
-		break;
-		case 4:
-		$('tx1').value="Thursday";
-		break;
-		case 5:
-		$('tx1').value="Friday";
-		break;
-		case 6:
-		$('tx1').value="Saturday";
-		break;
-	}	
-}
-
-//Функции для ввода:
-function c()
-{
-	$('tx1').value='';
-}
-
+var today = new Date();
 function f(x)
 {
-	$('tx1').value=$('tx1').value+x;
+$("tx1").value=$("tx1").value+x;
+}
+function f1()
+{
+var newyear = new Date(2018,11,31);
+t=newyear.getTime()-today.getTime();
+$('tx2').value=parseInt(t/1000/60/60/24);
+}
+function f2()
+{
+var firstya = new Date(2018,00,1);
+t=today.getTime()-firstya.getTime();
+$('tx3').value=parseInt(t/1000/60/60/24);
+}
+function f3()
+{
+$('tx4').value=today.getDay();
+b=parseFloat($('tx4').value);
+switch(b)
+{
+case 1:
+$('tx4').value='Понедельник'
+break;
+case 2:
+$('tx4').value='Вторник'
+break;
+case 3:
+$('tx4').value='Среда'
+break;
+case 4:
+$('tx4').value='Четверг'
+break;
+case 5:
+$('tx4').value='Пятница'
+break;
+case 6:
+$('tx4').value='Суббота'
+break;
+case 0:
+$('tx4').value='Воскресенье'
+break;
+}
+}
+function f4()
+{
+var today=new Date();
+$('tx5').value=today.getDay();
+a=parseFloat($('tx5').value);
+switch(a)
+{
+case 1:
+$('tx5').value='Понедельник'
+break;
+case 2:
+$('tx5').value='Вторник'
+break;
+case 3:
+$('tx5').value='Среда'
+break;
+case 4:
+$('tx5').value='Четверг'
+break;
+case 5:
+$('tx5').value='Пятница'
+break;
+case 6:
+$('tx5').value='Суббота'
+break;
+case 0:
+$('tx5').value='Воскресенье'
+break;
+}
+}
+function f5()
+{
+x=parseInt($('tx1').value);
+today.setDate(x);
+$('tx6').value=today;
+$('tx1').value='';
+}
+function f6()
+{
+x=parseInt($('tx1').value);
+today.setMonth(x);
+$('tx6').value=today;
+$('tx1').value='';
+}
+function f7()
+{
+x=parseInt($('tx1').value);
+today.setYear(x);
+$('tx6').value=today;
+$('tx1').value='';
 }
